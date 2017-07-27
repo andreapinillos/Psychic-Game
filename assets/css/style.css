@@ -1,5 +1,17 @@
 body{
-	background-image: url("assets/images/psychic-image.css");
+	background-image: url("http://cdn.micheleknight.com/wp-content/uploads/Depositphotos_13224739_m.jpg");
 	color: white;
 	font-family: 'Fira Sans', sans-serif;
+	text-align: center;
+}
+
+h1{
+	font-size: 24px;
+}
+p{
+	font-size: 16px;
+}
+#game{
+	margin: 20px;
+	padding: 15px;
 }
