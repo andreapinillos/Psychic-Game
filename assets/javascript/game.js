@@ -3,9 +3,11 @@
     var guessesLeft = 9;
     var guessesSoFar = []; // array to push user choices to
     var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']; //list of letters to choose from
+    
+    var computerGuess = computerChoices[Math.floor(Math.random()*computerChoices.length)]; //computer selects random letter
     document.onkeyup = function(event) {
         var userGuess = String.fromCharCode(event.keyCode).toLowerCase(); //taking in user guess
-        var computerGuess = computerChoices[Math.floor(Math.random()*computerChoices.length)]; //computer selects random letter
+        
         guessesSoFar.push(userGuess); //pushing user guess to guesses so far
         if (userGuess == computerGuess) {
             wins++;
